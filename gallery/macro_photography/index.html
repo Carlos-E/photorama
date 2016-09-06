@@ -6,19 +6,32 @@ active: gallery
 header-img: "gallery/albums/macro.jpg"
 album-title: "Macro Photography"
 album-folder: "macro_photography"
+copyright: © Andrea Ferrero
 images:
  - image_name: img00025396
    caption: IMAGE TITLE
-   copyright: © Andrea Ferrero
  - image_name: img00025628
    caption: IMAGE TITLE
-   copyright: © Andrea Ferrero
  - image_name: img00025768-2
    caption: IMAGE TITLE
-   copyright: © Andrea Ferrero
  - image_name: img00027772
    caption: IMAGE TITLE
-   copyright: © Andrea Ferrero
+ - image_name: img00023829
+   caption: 
+ - image_name: img00023833
+   caption: 
+ - image_name: img00023836
+   caption: 
+ - image_name: img00023841
+   caption: 
+ - image_name: img00023844
+   caption: 
+ - image_name: img00023853
+   caption: 
+ - image_name: img00023858
+   caption: 
+ - image_name: img00023861
+   caption: 
 ---
 
 <html class="no-js" lang="en">
@@ -42,14 +55,14 @@ images:
 				<figure class="gallery-item">
 					<header class='gallery-icon'>
 
-<a href="{{ site.store_url }}{{ site.store_baseurl }}/{{ page.album-folder }}/{{ image.image_name }}-web.jpg" class="popup"  title="{{ image.caption }}" data-caption="{{ image.copyright }}">
+<a href="{{ site.store_url }}{{ site.store_baseurl }}/{{ page.album-folder }}/{{ image.image_name }}-web.jpg" class="popup"  title="{{ image.caption }}" data-caption="{{ page.copyright }}">
 <img src="{{ site.store_url }}{{ site.store_baseurl }}/{{ page.album-folder }}/{{ image.image_name }}-thumb.jpg"></a>
 						
 					</header>	
 					<figcaption class='gallery-caption'>
 						<div class="entry-summary" id="{{ image.caption }}">
 							<h3>{{image.caption}}</h3>
-							<p>{{image.copyright}}</p>
+							<p>{{page.copyright}}</p>
 						</div>
 					</figcaption>
 				</figure>
